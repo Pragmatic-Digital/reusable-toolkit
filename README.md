@@ -39,27 +39,41 @@ pnpm install
 
 ### Available Scripts
 
+**Note:** pnpm commands below apply to **JavaScript/TypeScript packages only**. PHP packages use Composer and have their own separate workflow.
+
 ```bash
-# Build all packages
+# Build all JS/TS packages
 pnpm build
 
-# Run in development mode
+# Run in development mode (watch JS/TS packages)
 pnpm dev
 
-# Lint all packages
+# Lint all JS/TS packages
 pnpm lint
 
-# Type-check all packages
+# Type-check all JS/TS packages
 pnpm typecheck
 
-# Run tests
+# Run tests (when configured)
 pnpm test
 
-# Run Storybook (UI package)
+# Run Storybook for UI components (@pragmatic/ui only)
 pnpm storybook
 
-# Build Storybook
+# Build Storybook for deployment
 pnpm build-storybook
+```
+
+#### PHP Package Workflow
+
+For PHP packages (`packages/backend/php/*`), work in the individual package directory:
+
+```bash
+cd packages/backend/php/support
+composer install
+composer phpcs      # Check coding standards
+composer phpstan    # Run static analysis
+composer test       # Run tests (when configured)
 ```
 
 ## Versioning
@@ -90,19 +104,26 @@ Version bumps and npm publishing are handled automatically by GitHub Actions whe
 
 Located in `packages/frontend/*`, `packages/backend/node/*`, and `packages/shared/*`.
 
-- Published to npm registry
-- Independently versioned with Changesets
-- TypeScript with strict mode
-- ESLint + Prettier
+- **Package manager:** pnpm
+- **Build tool:** TypeScript compiler
+- **Published to:** npm registry
+- **Independently versioned** with Changesets
+- **Code quality:** TypeScript strict mode, ESLint, Prettier
+- **UI packages:** Storybook support for component documentation
+- **Linting/Building:** Managed by pnpm workspace commands (`pnpm build`, `pnpm lint`, `pnpm typecheck`)
 
 ### PHP Packages (`pragmatic/*`)
 
 Located in `packages/backend/php/*`.
 
-- Published to Packagist (deferred setup)
-- Framework-specific helpers split by CMS/framework
-- PHPCS (PSR-12) and PHPStan (level 8) validation
-- Independent Composer configuration per package
+- **Package manager:** Composer (per-package)
+- **Build tool:** None (PHP is interpreted)
+- **Published to:** Packagist (deferred setup)
+- **Code quality:** PHPCS (PSR-12), PHPStan (level 8)
+- **Framework-specific:** Laravel, WordPress/Bedrock, Craft CMS helpers
+- **Independently versioned** (deferred publication to Packagist)
+- **Linting/Analysis:** Run within individual package directories using Composer scripts
+- **Note:** pnpm and Storybook do not apply to PHP packages
 
 ## Contribution Guidelines
 

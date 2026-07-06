@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint-and-build:
+    name: Lint, Typecheck & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Type check
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
+
+  php-checks:
+    name: PHP Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer, phpcs, phpstan
+
+      - name: Install PHP dependencies (php-support)
+        working-directory: packages/backend/php/support
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Install PHP dependencies (laravel-support)
+        working-directory: packages/backend/php/laravel-support
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Install PHP dependencies (wordpress-support)
+        working-directory: packages/backend/php/wordpress-support
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Install PHP dependencies (craft-support)
+        working-directory: packages/backend/php/craft-support
+        run: composer install --no-interaction --prefer-dist
+
+      - name: PHPCS
+        run: phpcs --standard=tooling/php/phpcs.xml packages/backend/php
+
+      - name: PHPStan
+        run: phpstan analyse -c tooling/php/phpstan.neon.dist

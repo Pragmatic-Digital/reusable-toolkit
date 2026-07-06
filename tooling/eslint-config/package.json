@@ -1,0 +1,16 @@
+{
+  "name": "@pragmatic/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared ESLint configuration",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint-plugin-import": "^2.29.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

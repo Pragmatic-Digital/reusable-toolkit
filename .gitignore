@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager
+.pnpm-debug.log
+pnpm-lock.yaml
+
+# Testing
+coverage/
+
+# Storybook
+storybook-static/
+
+# Temporary files
+*.log
+*.orig
+.cache/
+
+# Node
+npm-debug.log
+yarn-error.log

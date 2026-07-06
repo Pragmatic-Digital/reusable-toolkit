@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="Pragmatic">
+    <description>Pragmatic Digital PHP coding standard</description>
+
+    <!-- Use PSR-12 as base -->
+    <rule ref="PSR12"/>
+
+    <!-- Additional rules -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.PHP.RequireStrictTypes"/>
+
+    <!-- Ignore vendor and generated files -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+    <!-- Show progress -->
+    <arg value="p"/>
+
+    <!-- Use colours -->
+    <arg name="colors"/>
+</ruleset>

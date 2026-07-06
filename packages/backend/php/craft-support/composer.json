@@ -1,0 +1,41 @@
+{
+    "name": "pragmatic/craft-support",
+    "description": "Craft CMS-specific utilities and helpers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pragmatic Digital",
+            "email": "hello@pragmatic.digital"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pragmatic\\CraftSupport\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pragmatic\\CraftSupport\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "craftcms/cms": "^4.0|^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs --standard=../../tooling/php/phpcs.xml src",
+        "phpstan": "phpstan analyse -c ../../tooling/php/phpstan.neon.dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    }
+}

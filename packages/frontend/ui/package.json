@@ -22,6 +22,9 @@
     "dev": "tsc --watch --project tsconfig.build.json",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

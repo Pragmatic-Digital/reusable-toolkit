@@ -9,7 +9,12 @@
       "Bash(tsc:*)",
       "Bash(pnpm lint:*)",
       "Bash(pnpm test:*)",
-      "Bash(pnpm build-storybook:*)"
+      "Bash(pnpm build-storybook:*)",
+      "Read(//Users/tomkiernan/.claude/**)",
+      "Bash(git add:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(pnpm --filter @pragmatic/hooks test:*)"
     ],
     "deny": [],
     "ask": []

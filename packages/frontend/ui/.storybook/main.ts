@@ -23,7 +23,7 @@ const config: StorybookConfig = {
     autodocs: 'tag',
   },
   async viteFinal(config: InlineConfig) {
-    const hooksPath = path.resolve(__dirname, '../../hooks/src');
+    const hooksPath = path.resolve(__dirname, '../../hooks/src/index.ts');
     return {
       ...config,
       resolve: {

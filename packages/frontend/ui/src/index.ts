@@ -20,6 +20,9 @@ export type { SeparatorProps } from './components/Separator';
 export { Sheet } from './components/Sheet';
 export type { SheetProps } from './components/Sheet';
 
+export { DropdownMenu } from './components/DropdownMenu';
+export type { DropdownMenuProps, DropdownMenuItemProps } from './components/DropdownMenu';
+
 // UI Components
 export { Button, buttonVariants } from './components/ui/button';
 export type { ButtonProps } from './components/ui/button';

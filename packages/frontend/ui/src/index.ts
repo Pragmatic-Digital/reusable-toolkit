@@ -16,6 +16,10 @@ export type { AvatarProps } from './components/Avatar';
 export { Separator } from './components/Separator';
 export type { SeparatorProps } from './components/Separator';
 
+// Dialog Components
+export { Sheet } from './components/Sheet';
+export type { SheetProps } from './components/Sheet';
+
 // UI Components
 export { Button, buttonVariants } from './components/ui/button';
 export type { ButtonProps } from './components/ui/button';

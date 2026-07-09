@@ -31,6 +31,18 @@ export type {
   NavigationMenuItem,
 } from './components/NavigationMenu';
 
+export { StickyHeader } from './components/StickyHeader';
+export type {
+  StickyHeaderProps,
+  StickyHeaderLogo,
+  StickyHeaderNavLink,
+  StickyHeaderButton,
+  StickyHeaderSearch,
+  StickyHeaderUser,
+  StickyHeaderScrollBehavior,
+  StickyHeaderAnnouncement,
+} from './components/StickyHeader';
+
 // UI Components
 export { Button, buttonVariants } from './components/ui/button';
 export type { ButtonProps } from './components/ui/button';

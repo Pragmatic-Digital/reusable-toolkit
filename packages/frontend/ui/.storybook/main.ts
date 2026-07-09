@@ -3,6 +3,9 @@ import type { InlineConfig } from 'vite';
 import tailwindcssPlugin from '@tailwindcss/postcss';
 import autoprefixer from 'autoprefixer';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(ts|tsx|mdx)'],
@@ -20,7 +23,7 @@ const config: StorybookConfig = {
     autodocs: 'tag',
   },
   async viteFinal(config: InlineConfig) {
-    const hooksPath = path.resolve(__dirname, '../../hooks/src/index.ts');
+    const hooksPath = path.resolve(__dirname, '../../hooks/src');
     return {
       ...config,
       resolve: {

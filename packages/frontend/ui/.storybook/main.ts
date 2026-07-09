@@ -20,13 +20,14 @@ const config: StorybookConfig = {
     autodocs: 'tag',
   },
   async viteFinal(config: InlineConfig) {
+    const hooksPath = path.resolve(__dirname, '../../hooks/src/index.ts');
     return {
       ...config,
       resolve: {
         ...config.resolve,
         alias: {
           ...config.resolve?.alias,
-          '@pragmatic/hooks': path.resolve(__dirname, '../../hooks/src'),
+          '@pragmatic/hooks': hooksPath,
         },
       },
       css: {

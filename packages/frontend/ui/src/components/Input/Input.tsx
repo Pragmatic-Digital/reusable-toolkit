@@ -9,7 +9,7 @@ const inputVariants = cva(
   'flex w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-base font-medium ring-offset-white transition-all placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
   {
     variants: {
-      size: {
+      inputSize: {
         sm: 'h-8 px-2 py-1 text-sm',
         default: 'h-10 px-3 py-2 text-base',
         lg: 'h-12 px-4 py-3 text-lg',
@@ -21,7 +21,7 @@ const inputVariants = cva(
       },
     },
     defaultVariants: {
-      size: 'default',
+      inputSize: 'default',
       variant: 'default',
     },
   }
@@ -30,13 +30,17 @@ const inputVariants = cva(
 /**
  * Props for Input component
  */
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement>, VariantProps<typeof inputVariants> {
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   /** Optional error message to display below input */
   errorMessage?: string;
   /** Optional helper text to display below input */
   helperText?: string;
   /** Optional label for the input */
   label?: string;
+  /** Input size variant */
+  size?: 'sm' | 'default' | 'lg';
+  /** Input variant for different states */
+  variant?: 'default' | 'error' | 'success';
   /** Whether to show required indicator */
   required?: boolean;
   /** Optional icon element to display inside input on the left */
@@ -139,7 +143,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             disabled={disabled}
             className={clsx(
-              inputVariants({ size, variant: displayVariant }),
+              inputVariants({ inputSize: size, variant: displayVariant }),
               leftIcon && 'pl-10',
               rightIcon && 'pr-10',
               className,

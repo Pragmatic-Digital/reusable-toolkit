@@ -1,7 +1,7 @@
 import React, { CSSProperties, ReactNode, useState } from 'react';
 import { clsx } from 'clsx';
 import { useScrollBehavior, useScrollDirection, useMediaQuery } from '@pragmatic/hooks';
-import { Button } from '../Button';
+import { Button } from '../ui/button';
 import { Input } from '../Input';
 import { Avatar } from '../Avatar';
 import { Separator } from '../Separator';
@@ -331,7 +331,7 @@ export const StickyHeader = React.forwardRef<HTMLElement, StickyHeaderProps>(
             sticky && 'sticky top-0',
             className
           )}
-          style={{ zIndex, minHeight: `${height}px`, ...getScrollStyles() }}
+          style={{ zIndex: zIndex.toString(), minHeight: `${height}px`, ...getScrollStyles() }}
           aria-label={ariaLabel}
           role="banner"
         >
@@ -402,7 +402,7 @@ export const StickyHeader = React.forwardRef<HTMLElement, StickyHeaderProps>(
             className
           )}
           style={{
-            zIndex,
+            zIndex: zIndex.toString(),
             minHeight: `${height}px`,
             ...getScrollStyles(),
           }}

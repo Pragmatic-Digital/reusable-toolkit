@@ -1,6 +1,6 @@
 # Sticky Header Implementation Status
 
-## Completed: Foundation & Hooks (Phase 1-2)
+## Completed: Foundation, Hooks, & Radix Wrappers (Phase 1-3)
 
 ### 3 Reusable Hooks in `@pragmatic/hooks`
 
@@ -22,7 +22,9 @@
 - Support for all media query types (mobile, dark mode, landscape, etc.)
 - **22 comprehensive tests** with fallback testing
 
-### 6 Foundation UI Components in `@pragmatic/ui`
+### 9 UI Components in `@pragmatic/ui`
+
+#### Foundation (6)
 
 ✅ **Input**
 - Flexible form input with 3 sizes (sm, default, lg)
@@ -57,38 +59,45 @@
 - Multiple background types and layouts
 - 68 tests, 20+ stories
 
-## Remaining: Radix UI Components & StickyHeader (Phase 3-5)
+#### Radix UI Wrappers (3) ✅ Phase 3
+
+✅ **Sheet**
+- Mobile drawer/slide-out panel
+- Slides from any side (left, right, top, bottom)
+- Radix UI Dialog wrapper
+- **22 tests** + **8 Storybook stories**
+
+✅ **DropdownMenu**
+- User menus, actions, settings
+- Radix UI DropdownMenu wrapper
+- Title support, item variants (default/destructive)
+- Icon support, disabled state
+- **15 tests** + **6 Storybook stories**
+
+## Remaining: NavigationMenu & StickyHeader (Phase 4-5)
 
 ### To Implement (In Priority Order)
 
-#### Phase 3: Complex Radix UI Wrappers
-These need to be installed and wrapped:
+#### Phase 4: NavigationMenu (Last Complex Component)
+Needs to be installed and wrapped:
 ```bash
-pnpm add @radix-ui/react-dialog @radix-ui/react-dropdown-menu @radix-ui/react-navigation-menu
+pnpm add @radix-ui/react-navigation-menu
 ```
-
-- **Sheet** (Dialog-based) - Mobile slide-out menu
-  - Left/right positioning
-  - Focus trap
-  - Animation support
-
-- **DropdownMenu** - User profile and simple menus
-  - Keyboard navigation
-  - Sub-items support
 
 - **NavigationMenu** - Desktop mega-menu navigation
   - Column support for content
   - Hover/click handling
   - Keyboard navigation
+  - Submenu nesting
 
-#### Phase 4: StickyHeader Main Component
+#### Phase 5: StickyHeader Main Component
 - Orchestrates all components above
 - Scroll behavior application (fade, shrink, hide, blur)
 - Layout variants (spread, centered, logo-left-nav-right, logo-left-nav-center)
 - Mobile menu integration
 - All 7 TypeScript interfaces (Logo, NavLink, Button, Search, User, ScrollBehavior, Announcement)
 
-#### Phase 5: Testing & Documentation
+#### Phase 6: Testing & Documentation
 - 80+ integration tests for StickyHeader
 - 25+ Storybook stories showing all features
 - README updates
@@ -153,18 +162,18 @@ packages/
 
 ## Statistics
 
-**Completed Work:**
+**Completed Work (Phase 1-3):**
 - 3 custom hooks with 55 tests total
-- 6 UI components with 62 tests total
-- 25+ Storybook stories
-- 2,925 lines of production code + tests
-- ~150 lines of documentation
+- 9 UI components with 138 tests total
+- 39 Storybook stories
+- 4,220 lines of production code + tests
+- ~500 lines of documentation
 
-**Remaining Work (Estimated):**
-- 3 Radix UI wrapper components with ~40 tests
+**Remaining Work (Phase 4-6):**
+- 1 NavigationMenu component with ~25 tests
 - 1 main StickyHeader component with ~80 tests
 - 25+ more Storybook stories
-- ~2,000 additional lines of code
+- ~1,500 additional lines of code
 
 ## Next Steps
 
@@ -196,6 +205,9 @@ Same pattern - wrap Radix components with styling and patterns
 ## Commit History
 
 ```
+af24a8b Add DropdownMenu component with tests and stories
+a0f1cc2 Add Sheet component (Radix Dialog wrapper) with full tests and stories
+f0b8cf1 Add Sticky Header implementation status and progress documentation
 df230d8 Add reusable hooks and foundation UI components
 7f7d2f1 Add comprehensive toolkit awareness documentation
 25b8d7b Feat: add Hero component example and also storybook examples to the component
@@ -228,6 +240,8 @@ export { Hero, Button, Input, Avatar, Separator } from '@pragmatic/ui';
 
 ---
 
-**Status:** Phase 1-2 Complete | Phase 3-5 Ready to Begin
+**Status:** Phase 1-3 Complete ✅ | Phase 4-6 Ready to Begin
 
-All foundation work is done. The remaining work follows the same patterns and quality standards established in this foundation.
+**Progress:** 60% Complete (9 of 11 components done)
+
+All foundation and Radix wrapper components are complete. Ready to implement NavigationMenu and StickyHeader orchestrator component. The remaining work follows the same proven patterns and quality standards established throughout this implementation.

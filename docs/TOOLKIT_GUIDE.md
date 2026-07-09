@@ -26,7 +26,7 @@ The reusable toolkit is a monorepo containing shared, production-ready code for 
 npm install @pragmatic/ui
 
 # Use in your project
-import { Hero, Button } from '@pragmatic/ui';
+import { StickyHeader, Hero, Button } from '@pragmatic/ui';
 
 # View documentation
 pnpm --filter @pragmatic/ui storybook
@@ -37,7 +37,8 @@ pnpm --filter @pragmatic/ui storybook
 ```bash
 npm install @pragmatic/hooks
 
-import { useCustomHook } from '@pragmatic/hooks';
+# Scroll-based hooks for sticky headers, parallax, etc.
+import { useScrollBehavior, useScrollDirection, useMediaQuery } from '@pragmatic/hooks';
 ```
 
 ### For Using Types
@@ -146,6 +147,51 @@ import { API_ENDPOINTS } from '@pragmatic/constants';
 
 ## Component Examples
 
+### Using StickyHeader Component
+
+```tsx
+import { StickyHeader } from '@pragmatic/ui';
+
+export function App() {
+  return (
+    <>
+      <StickyHeader
+        logo={{ src: 'logo.svg', alt: 'Company Logo', href: '/' }}
+        navLinks={[
+          { label: 'Products', href: '/products' },
+          {
+            label: 'Solutions',
+            submenu: [
+              { label: 'Enterprise', href: '/enterprise' },
+              { label: 'Startup', href: '/startup' }
+            ]
+          },
+          { label: 'Pricing', href: '/pricing' }
+        ]}
+        buttons={[
+          { label: 'Sign In', variant: 'ghost' },
+          { label: 'Get Started', variant: 'default' }
+        ]}
+        search={{ enabled: true, placeholder: 'Search...' }}
+        user={{
+          name: 'John Doe',
+          initials: 'JD',
+          menuItems: [
+            { label: 'Profile', href: '/profile' },
+            { label: 'Settings', href: '/settings' },
+            { label: 'Sign Out', href: '/logout' }
+          ]
+        }}
+        layout="spread"
+        sticky
+      />
+
+      {/* Page content */}
+    </>
+  );
+}
+```
+
 ### Using Hero Component
 
 ```tsx
@@ -204,15 +250,45 @@ export function MyComponent() {
 }
 ```
 
-### Using Custom Hook
+### Using Scroll Hooks
 
 ```tsx
-import { useCustomHook } from '@pragmatic/hooks';
+import { useScrollBehavior, useScrollDirection } from '@pragmatic/hooks';
 
-export function MyComponent() {
-  const value = useCustomHook();
+export function ParallaxHeader() {
+  const scrollState = useScrollBehavior({ offset: 100 });
+  const scrollDir = useScrollDirection();
 
-  return <div>{value}</div>;
+  return (
+    <header
+      style={{
+        opacity: scrollState.isBelowThreshold ? 0.8 : 1,
+        transform: scrollDir.direction === 'down'
+          ? 'translateY(-100%)'
+          : 'translateY(0px)'
+      }}
+    >
+      {scrollDir.direction === 'down' && 'Scrolling down...'}
+    </header>
+  );
+}
+```
+
+### Using Media Query Hook
+
+```tsx
+import { useMediaQuery } from '@pragmatic/hooks';
+
+export function ResponsiveLayout() {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  return (
+    <div>
+      {isMobile ? <MobileNav /> : <DesktopNav />}
+      {isDarkMode && <DarkModeStyles />}
+    </div>
+  );
 }
 ```
 

@@ -46,44 +46,85 @@ import { Logger } from '@pragmatic/logger';
 ### @pragmatic/ui
 React component library with accessible, styled components built with Tailwind CSS and shadcn/ui patterns.
 
-**Current Components:**
+**Major Components:**
+- `StickyHeader` - Comprehensive sticky header orchestrator
+  - 4 layout variants: spread, centred, logo-left-nav-right, logo-left-nav-centre
+  - 5 scroll behaviours: fade, shrink, hide, blur, none
+  - Responsive mobile/desktop with configurable breakpoint
+  - Desktop navigation with mega menus
+  - Mobile drawer menu
+  - User profile dropdown with avatar
+  - Search functionality
+  - Announcement bar
+  - Full WCAG 2.1 AA accessibility
+  - 13 Storybook stories + 50+ tests
+  - Import: `import { StickyHeader, type StickyHeaderProps } from '@pragmatic/ui'`
+
 - `Hero` - Large banner hero section component
   - Multiple background types (image, video, gradient, solid colour)
-  - Flexible layouts (centered, left, right)
+  - Flexible layouts (centred, left, right)
   - Customisable overlays and multiple CTAs
   - Full WCAG 2.1 AA accessibility
   - Mobile-first responsive design
+  - 20+ Storybook stories + 68 tests
   - Import: `import { Hero, type HeroProps } from '@pragmatic/ui'`
 
-- `Button` - shadcn/ui-based button component
-  - Multiple variants: default, secondary, outline, destructive, ghost, link
-  - Full size support: default, sm, lg, icon
-  - Built on Radix UI primitives
-  - Import: `import { Button, type ButtonProps } from '@pragmatic/ui'`
+**Foundation UI Components:**
+- `Button` - shadcn/ui-based button (multiple variants, sizes)
+- `Input` - Form input with validation states and icons
+- `Avatar` - User avatar with image or initials fallback
+- `Separator` - Horizontal/vertical visual dividers
+- `Sheet` - Mobile drawer/slide-out panel (Radix Dialog)
+- `DropdownMenu` - User menus and actions (Radix DropdownMenu)
+- `NavigationMenu` - Site navigation with mega menus (Radix NavigationMenu)
 
 **When to Use:**
 - Building user interfaces that need reusable, accessible components
 - Creating consistent design systems across applications
 - Need components with built-in accessibility features
 - Want Tailwind-based styling with shadcn patterns
+- Building full-featured sticky headers for web applications
 
 **Key Features:**
 - TypeScript support with full type safety
 - Storybook documentation (20+ stories per component)
-- Comprehensive test coverage
-- Tailwind CSS styling
+- Comprehensive test coverage (50+ tests per complex component)
+- Tailwind CSS v4 styling
 - British spelling conventions
+- CVA (Class Variance Authority) for type-safe variants
+- Radix UI primitives for accessibility
 
 ### @pragmatic/hooks
 Custom React hooks for common patterns and utilities.
 
 **Available Hooks:**
-- (To be documented as hooks are added)
+- `useScrollBehavior` - Scroll position tracking and threshold detection
+  - Tracks scroll position, scroll state, and threshold crossing
+  - Returns: `{ scrollY, isScrolling, isBelowThreshold }`
+  - Configurable offset and debounce delay
+  - Supports throttle option for performance
+  - Import: `import { useScrollBehavior } from '@pragmatic/hooks'`
+
+- `useScrollDirection` - Scroll direction detection (up, down, none)
+  - Tracks scroll direction and position changes
+  - Returns: `{ direction, previousScrollY, currentScrollY }`
+  - Threshold-based filtering for minor scrolls
+  - Debounce-based reset
+  - Import: `import { useScrollDirection } from '@pragmatic/hooks'`
+
+- `useMediaQuery` - CSS media query matching for responsive design
+  - Matches media queries (mobile, dark mode, landscape, etc.)
+  - Returns: `boolean` indicating if query matches
+  - SSR-safe with window checks
+  - Full media query support
+  - Import: `import { useMediaQuery } from '@pragmatic/hooks'`
 
 **When to Use:**
 - Encapsulating component logic
-- Sharing state management patterns
-- Reusing side effect logic across components
+- Scroll-based animations and effects (sticky headers, parallax)
+- Responsive design without Tailwind breakpoints
+- Sharing state management patterns across components
+- Reusing side effect logic across multiple applications
 
 ---
 
@@ -176,19 +217,66 @@ Shared TypeScript configuration with strict mode.
 
 ## Common Patterns
 
-### React Component in New App
+### React Component in New App with StickyHeader
 ```typescript
-import { Hero, Button } from '@pragmatic/ui';
-import type { HeroProps } from '@pragmatic/ui';
+import { StickyHeader, Hero, Button } from '@pragmatic/ui';
+import type { StickyHeaderProps } from '@pragmatic/ui';
 
-export function HomePage() {
+export function App() {
   return (
-    <Hero
-      title="Welcome"
-      buttons={[
-        { label: 'Get Started', variant: 'default', onClick: () => {} }
-      ]}
-    />
+    <>
+      <StickyHeader
+        logo={{ src: 'logo.svg', alt: 'Company Logo', href: '/' }}
+        navLinks={[
+          { label: 'Home', href: '/' },
+          { label: 'Products', href: '/products' },
+          { label: 'Contact', href: '/contact' }
+        ]}
+        buttons={[
+          { label: 'Sign In', variant: 'ghost' },
+          { label: 'Get Started', variant: 'default' }
+        ]}
+        search={{ enabled: true, placeholder: 'Search...' }}
+        user={{
+          name: 'John Doe',
+          initials: 'JD',
+          menuItems: [
+            { label: 'Profile', href: '/profile' },
+            { label: 'Sign Out', href: '/logout' }
+          ]
+        }}
+        layout="spread"
+        sticky
+      />
+
+      <Hero
+        title="Welcome"
+        buttons={[
+          { label: 'Get Started', variant: 'default', onClick: () => {} }
+        ]}
+      />
+    </>
+  );
+}
+```
+
+### Using Scroll Hooks
+```typescript
+import { useScrollBehavior, useScrollDirection } from '@pragmatic/hooks';
+
+export function ScrollingComponent() {
+  const scrollState = useScrollBehavior({ offset: 100 });
+  const scrollDir = useScrollDirection();
+
+  return (
+    <div
+      style={{
+        opacity: scrollState.isBelowThreshold ? 0.8 : 1,
+        transform: scrollDir.direction === 'down' ? 'translateY(-20px)' : 'translateY(0px)'
+      }}
+    >
+      Scroll down to see effect (current: {scrollDir.direction})
+    </div>
   );
 }
 ```

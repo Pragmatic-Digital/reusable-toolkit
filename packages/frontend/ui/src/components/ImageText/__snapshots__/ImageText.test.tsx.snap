@@ -1,0 +1,163 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImageText Component > Snapshots > should match the snapshot for the default (image-left) variant 1`] = `
+<section
+  aria-label="From idea to launch"
+  class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12"
+  data-image-position="left"
+  data-layout="contained"
+  data-mobile-order="image-first"
+  data-testid="imagetext"
+  data-text-align="left"
+>
+  <div
+    class="w-full md:order-1 order-1"
+    data-testid="imagetext-image-col"
+  >
+    <div
+      class="relative w-full overflow-hidden bg-slate-100 rounded-2xl"
+      data-layout="contained"
+      data-testid="imagetext-image-frame"
+      style="aspect-ratio: 4 / 3;"
+    >
+      <img
+        alt="Our team collaborating"
+        class="h-full w-full object-cover"
+        data-testid="imagetext-image"
+        loading="lazy"
+        src="https://cdn.example.com/section.jpg"
+      />
+    </div>
+  </div>
+  <div
+    class="flex w-full flex-col justify-center text-left items-start md:order-2 order-2"
+    data-testid="imagetext-text-col"
+  >
+    <p
+      class="mb-3 text-sm font-semibold uppercase tracking-wide text-indigo-600"
+      data-testid="imagetext-overline"
+    >
+      Our process
+    </p>
+    <h2
+      class="text-3xl font-bold text-slate-900 sm:text-4xl"
+    >
+      From idea to launch
+    </h2>
+    <div
+      class="mt-4 text-base text-slate-600 sm:text-lg"
+      data-testid="imagetext-description"
+    >
+      How we work with you.
+    </div>
+    <div
+      class="mt-6"
+    >
+      <a
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-slate-900 hover:bg-slate-100 active:bg-slate-200 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2"
+        data-testid="imagetext-cta"
+        data-variant="primary"
+        href="/process"
+      >
+        Learn more
+      </a>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`ImageText Component > Snapshots > should match the snapshot for the full-bleed variant 1`] = `
+<section
+  aria-label="From idea to launch"
+  class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12 md:items-stretch md:gap-0"
+  data-image-position="left"
+  data-layout="full-bleed"
+  data-mobile-order="image-first"
+  data-testid="imagetext"
+  data-text-align="center"
+>
+  <div
+    class="w-full md:order-1 order-1"
+    data-testid="imagetext-image-col"
+  >
+    <div
+      class="relative w-full overflow-hidden bg-slate-100 md:h-full"
+      data-layout="full-bleed"
+      data-testid="imagetext-image-frame"
+    >
+      <img
+        alt="Our team collaborating"
+        class="h-full w-full object-cover min-h-[16rem]"
+        data-testid="imagetext-image"
+        loading="lazy"
+        src="https://cdn.example.com/section.jpg"
+        style="aspect-ratio: 4 / 3;"
+      />
+    </div>
+  </div>
+  <div
+    class="flex w-full flex-col justify-center text-center items-center md:order-2 order-2 py-8 md:px-4"
+    data-testid="imagetext-text-col"
+  >
+    <h2
+      class="text-3xl font-bold text-slate-900 sm:text-4xl"
+    >
+      From idea to launch
+    </h2>
+    <div
+      class="mt-4 text-base text-slate-600 sm:text-lg"
+      data-testid="imagetext-description"
+    >
+      How we work with you.
+    </div>
+  </div>
+</section>
+`;
+
+exports[`ImageText Component > Snapshots > should match the snapshot for the image-right variant 1`] = `
+<section
+  aria-label="From idea to launch"
+  class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12"
+  data-image-position="right"
+  data-layout="contained"
+  data-mobile-order="image-first"
+  data-testid="imagetext"
+  data-text-align="left"
+>
+  <div
+    class="w-full md:order-2 order-1"
+    data-testid="imagetext-image-col"
+  >
+    <div
+      class="relative w-full overflow-hidden bg-slate-100 rounded-2xl"
+      data-layout="contained"
+      data-testid="imagetext-image-frame"
+      style="aspect-ratio: 4 / 3;"
+    >
+      <img
+        alt="Our team collaborating"
+        class="h-full w-full object-cover"
+        data-testid="imagetext-image"
+        loading="lazy"
+        src="https://cdn.example.com/section.jpg"
+      />
+    </div>
+  </div>
+  <div
+    class="flex w-full flex-col justify-center text-left items-start md:order-1 order-2"
+    data-testid="imagetext-text-col"
+  >
+    <h2
+      class="text-3xl font-bold text-slate-900 sm:text-4xl"
+    >
+      From idea to launch
+    </h2>
+    <div
+      class="mt-4 text-base text-slate-600 sm:text-lg"
+      data-testid="imagetext-description"
+    >
+      How we work with you.
+    </div>
+  </div>
+</section>
+`;

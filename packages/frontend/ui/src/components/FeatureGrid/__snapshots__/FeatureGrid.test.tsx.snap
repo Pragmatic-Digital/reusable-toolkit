@@ -1,0 +1,352 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FeatureGrid Component > Snapshots > should match the snapshot for the 4-column image grid 1`] = `
+<ul
+  aria-label="Product features"
+  class="grid list-none p-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+  data-columns="4"
+  data-layout="stacked"
+  data-testid="feature-grid"
+  role="list"
+>
+  <li>
+    <article
+      class="group relative flex flex-col"
+      data-layout="stacked"
+      data-testid="feature-card"
+    >
+      <div
+        class="mb-4"
+      >
+        <img
+          alt=""
+          class="shrink-0 rounded-md object-cover"
+          data-testid="feature-image"
+          loading="lazy"
+          src="https://cdn.example.com/icon.png"
+          style="width: 48px; height: 48px;"
+        />
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            One
+          </h3>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Copy.
+        </p>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article
+      class="group relative flex flex-col"
+      data-layout="stacked"
+      data-testid="feature-card"
+    >
+      <div
+        class="mb-4"
+      >
+        <img
+          alt=""
+          class="shrink-0 rounded-md object-cover"
+          data-testid="feature-image"
+          loading="lazy"
+          src="https://cdn.example.com/icon.png"
+          style="width: 48px; height: 48px;"
+        />
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            Two
+          </h3>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Copy.
+        </p>
+      </div>
+    </article>
+  </li>
+</ul>
+`;
+
+exports[`FeatureGrid Component > Snapshots > should match the snapshot for the default 3-column grid 1`] = `
+<ul
+  aria-label="Product features"
+  class="grid list-none p-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+  data-columns="3"
+  data-layout="stacked"
+  data-testid="feature-grid"
+  role="list"
+>
+  <li>
+    <article
+      class="group relative flex flex-col"
+      data-layout="stacked"
+      data-testid="feature-card"
+    >
+      <div
+        class="mb-4"
+      >
+        <span
+          aria-hidden="true"
+          class="inline-flex shrink-0 items-center justify-center text-indigo-600"
+          data-testid="feature-icon"
+          style="width: 48px; height: 48px;"
+        >
+          <svg
+            data-testid="svg-glyph"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            Fast
+          </h3>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Very fast.
+        </p>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article
+      class="group relative flex flex-col"
+      data-layout="stacked"
+      data-testid="feature-card"
+    >
+      <div
+        class="mb-4"
+      >
+        <span
+          aria-hidden="true"
+          class="inline-flex shrink-0 items-center justify-center text-indigo-600"
+          data-testid="feature-icon"
+          style="width: 48px; height: 48px;"
+        >
+          <svg
+            data-testid="svg-glyph"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            Secure
+          </h3>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Very secure.
+        </p>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article
+      class="group relative flex flex-col"
+      data-layout="stacked"
+      data-testid="feature-card"
+    >
+      <div
+        class="mb-4"
+      >
+        <span
+          aria-hidden="true"
+          class="inline-flex shrink-0 items-center justify-center text-indigo-600"
+          data-testid="feature-icon"
+          style="width: 48px; height: 48px;"
+        >
+          <svg
+            data-testid="svg-glyph"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            Loved
+          </h3>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Very loved.
+        </p>
+      </div>
+    </article>
+  </li>
+</ul>
+`;
+
+exports[`FeatureGrid Component > Snapshots > should match the snapshot for the horizontal layout with a badge 1`] = `
+<ul
+  aria-label="Product features"
+  class="grid list-none p-0 grid-cols-1 sm:grid-cols-2 gap-6"
+  data-columns="2"
+  data-layout="horizontal"
+  data-testid="feature-grid"
+  role="list"
+>
+  <li>
+    <article
+      class="group relative flex flex-row items-start gap-4"
+      data-layout="horizontal"
+      data-testid="feature-card"
+    >
+      <div
+        class=""
+      >
+        <span
+          aria-hidden="true"
+          class="inline-flex shrink-0 items-center justify-center text-indigo-600"
+          data-testid="feature-icon"
+          style="width: 48px; height: 48px;"
+        >
+          <svg
+            data-testid="svg-glyph"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            Fast
+          </h3>
+          <span
+            class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold bg-indigo-600 text-white"
+            data-testid="feature-badge"
+            data-variant="accent"
+          >
+            New
+          </span>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Copy.
+        </p>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article
+      class="group relative flex flex-row items-start gap-4"
+      data-layout="horizontal"
+      data-testid="feature-card"
+    >
+      <div
+        class=""
+      >
+        <span
+          aria-hidden="true"
+          class="inline-flex shrink-0 items-center justify-center text-indigo-600"
+          data-testid="feature-icon"
+          style="width: 48px; height: 48px;"
+        >
+          <svg
+            data-testid="svg-glyph"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <h3
+            class="text-base font-semibold text-slate-900"
+          >
+            Secure
+          </h3>
+        </div>
+        <p
+          class="mt-2 text-sm text-slate-600"
+          data-testid="feature-description"
+        >
+          Copy.
+        </p>
+      </div>
+    </article>
+  </li>
+</ul>
+`;

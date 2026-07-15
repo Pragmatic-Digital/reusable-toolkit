@@ -1,0 +1,424 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Testimonial Component > Snapshots > should match the snapshot for the compact variant with the fallback avatar 1`] = `
+<figure
+  class="flex flex-col rounded-lg border border-slate-200 bg-white p-4"
+  data-testid="testimonial"
+  data-variant="compact"
+>
+  <blockquote
+    class="flex-1 text-sm text-slate-700"
+  >
+    <p>
+      “Q”
+    </p>
+  </blockquote>
+  <figcaption
+    class="mt-4 flex items-center gap-3 mt-3"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-200 font-semibold text-slate-600 h-8 w-8 text-xs"
+      data-testid="testimonial-avatar-fallback"
+    >
+      PN
+    </span>
+    <div
+      class="flex flex-col"
+    >
+      <span
+        class="font-semibold text-slate-900"
+        data-testid="testimonial-author"
+      >
+        Priya Nair
+      </span>
+      <span
+        class="text-sm text-slate-500"
+        data-testid="testimonial-meta"
+      >
+        CTO
+      </span>
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`Testimonial Component > Snapshots > should match the snapshot for the default variant 1`] = `
+<figure
+  class="flex flex-col rounded-xl border border-slate-200 bg-white p-6"
+  data-testid="testimonial"
+  data-variant="single"
+>
+  <div
+    aria-label="4.5 out of 5 stars"
+    class="relative inline-flex mb-3"
+    data-max="5"
+    data-testid="rating"
+    data-value="4.5"
+    role="img"
+  >
+    <div
+      class="flex"
+      data-testid="rating-empty"
+      style="color: rgb(203, 213, 225);"
+    >
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+    </div>
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 overflow-hidden"
+      data-testid="rating-fill"
+      style="width: 90%;"
+    >
+      <div
+        class="flex"
+        data-testid="rating-filled"
+      >
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <blockquote
+    class="flex-1 text-lg text-slate-800"
+  >
+    <p>
+      “A genuinely excellent product.”
+    </p>
+  </blockquote>
+  <figcaption
+    class="mt-4 flex items-center gap-3"
+  >
+    <img
+      alt="Jordan Lee"
+      class="shrink-0 rounded-full object-cover h-11 w-11 text-sm"
+      data-testid="testimonial-avatar-image"
+      loading="lazy"
+      src="https://cdn.example.com/author.jpg"
+    />
+    <div
+      class="flex flex-col"
+    >
+      <span
+        class="font-semibold text-slate-900"
+        data-testid="testimonial-author"
+      >
+        Jordan Lee
+      </span>
+      <span
+        class="text-sm text-slate-500"
+        data-testid="testimonial-meta"
+      >
+        Head of Operations, Northwind
+      </span>
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`Testimonial Component > Snapshots > should match the snapshot for the highlighted variant 1`] = `
+<figure
+  class="flex flex-col rounded-2xl bg-slate-900 p-8 shadow-xl"
+  data-testid="testimonial"
+  data-variant="highlighted"
+>
+  <div
+    aria-label="5 out of 5 stars"
+    class="relative inline-flex mb-3"
+    data-max="5"
+    data-testid="rating"
+    data-value="5"
+    role="img"
+  >
+    <div
+      class="flex"
+      data-testid="rating-empty"
+      style="color: rgb(203, 213, 225);"
+    >
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="#cbd5e1"
+        height="18"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+        />
+      </svg>
+    </div>
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 overflow-hidden"
+      data-testid="rating-fill"
+      style="width: 100%;"
+    >
+      <div
+        class="flex"
+        data-testid="rating-filled"
+      >
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="text-amber-400"
+          fill="currentColor"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+        >
+          <path
+            d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <blockquote
+    class="flex-1 text-xl font-medium text-white sm:text-2xl"
+  >
+    <p>
+      “Q”
+    </p>
+  </blockquote>
+  <figcaption
+    class="mt-4 flex items-center gap-3"
+  >
+    <span
+      aria-hidden="true"
+      class="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-200 font-semibold text-slate-600 h-14 w-14 text-base"
+      data-testid="testimonial-avatar-fallback"
+    >
+      A
+    </span>
+    <div
+      class="flex flex-col"
+    >
+      <span
+        class="font-semibold text-white"
+        data-testid="testimonial-author"
+      >
+        A
+      </span>
+      <span
+        class="text-sm text-slate-300"
+        data-testid="testimonial-meta"
+      >
+        Lumen
+      </span>
+    </div>
+  </figcaption>
+</figure>
+`;

@@ -1,0 +1,147 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LogoGrid Component > Snapshots > should match the snapshot for a link-free grid 1`] = `
+<ul
+  aria-label="Our partners"
+  class="grid list-none p-0 grid-cols-2 sm:grid-cols-3 gap-6"
+  data-columns="3"
+  data-hover-effect="grayscale"
+  data-testid="logo-grid"
+  role="list"
+>
+  <li>
+    <div
+      class="flex items-center justify-center"
+      data-testid="logo-item"
+      style="height: 48px;"
+    >
+      <img
+        alt="Acme"
+        class="max-h-full w-auto object-contain grayscale opacity-80 transition duration-200 hover:grayscale-0 hover:opacity-100"
+        data-testid="logo-image"
+        loading="lazy"
+        src="https://cdn.example.com/acme.svg"
+        style="max-height: 48px; max-width: 100%;"
+      />
+    </div>
+  </li>
+  <li>
+    <div
+      class="flex items-center justify-center"
+      data-testid="logo-item"
+      style="height: 48px;"
+    >
+      <img
+        alt="Globex"
+        class="max-h-full w-auto object-contain grayscale opacity-80 transition duration-200 hover:grayscale-0 hover:opacity-100"
+        data-testid="logo-image"
+        loading="lazy"
+        src="https://cdn.example.com/globex.png"
+        style="max-height: 48px; max-width: 100%;"
+      />
+    </div>
+  </li>
+  <li>
+    <div
+      class="flex items-center justify-center"
+      data-testid="logo-item"
+      style="height: 48px;"
+    >
+      <img
+        alt="Initech"
+        class="max-h-full w-auto object-contain grayscale opacity-80 transition duration-200 hover:grayscale-0 hover:opacity-100"
+        data-testid="logo-image"
+        loading="lazy"
+        src="https://cdn.example.com/initech.svg"
+        style="max-height: 48px; max-width: 100%;"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`LogoGrid Component > Snapshots > should match the snapshot for the default linked grid 1`] = `
+<ul
+  aria-label="Our partners"
+  class="grid list-none p-0 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"
+  data-columns="4"
+  data-hover-effect="grayscale"
+  data-testid="logo-grid"
+  role="list"
+>
+  <li>
+    <div
+      class="flex items-center justify-center"
+      data-testid="logo-item"
+      style="height: 48px;"
+    >
+      <a
+        class="inline-flex h-full items-center justify-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+        data-testid="logo-link"
+        href="https://acme.example"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Acme"
+          class="max-h-full w-auto object-contain grayscale opacity-80 transition duration-200 hover:grayscale-0 hover:opacity-100"
+          data-testid="logo-image"
+          loading="lazy"
+          src="https://cdn.example.com/acme.svg"
+          style="max-height: 48px; max-width: 100%;"
+        />
+        <span
+          class="sr-only"
+        >
+          (opens in a new tab)
+        </span>
+      </a>
+    </div>
+  </li>
+  <li>
+    <div
+      class="flex items-center justify-center"
+      data-testid="logo-item"
+      style="height: 48px;"
+    >
+      <a
+        class="inline-flex h-full items-center justify-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+        data-testid="logo-link"
+        href="https://globex.example"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Globex"
+          class="max-h-full w-auto object-contain grayscale opacity-80 transition duration-200 hover:grayscale-0 hover:opacity-100"
+          data-testid="logo-image"
+          loading="lazy"
+          src="https://cdn.example.com/globex.png"
+          style="max-height: 48px; max-width: 100%;"
+        />
+        <span
+          class="sr-only"
+        >
+          (opens in a new tab)
+        </span>
+      </a>
+    </div>
+  </li>
+  <li>
+    <div
+      class="flex items-center justify-center"
+      data-testid="logo-item"
+      style="height: 48px;"
+    >
+      <img
+        alt="Initech"
+        class="max-h-full w-auto object-contain grayscale opacity-80 transition duration-200 hover:grayscale-0 hover:opacity-100"
+        data-testid="logo-image"
+        loading="lazy"
+        src="https://cdn.example.com/initech.svg"
+        style="max-height: 48px; max-width: 100%;"
+      />
+    </div>
+  </li>
+</ul>
+`;

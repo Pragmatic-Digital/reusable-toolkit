@@ -1,0 +1,234 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CallToAction Component > Snapshots > should match the snapshot for the default variant 1`] = `
+<section
+  aria-label="Ready to get started?"
+  class="relative isolate w-full overflow-hidden"
+  data-alignment="center"
+  data-background-type="colour"
+  data-content-position="center"
+  style="background-color: rgb(241, 245, 249);"
+>
+  <div
+    class="relative flex w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+  >
+    <div
+      class="flex w-full flex-col mx-auto items-center text-center"
+      data-testid="cta-content"
+      style="max-width: 42rem;"
+    >
+      <h2
+        class="text-balance text-3xl font-bold sm:text-4xl lg:text-5xl text-slate-900"
+      >
+        Ready to get started?
+      </h2>
+      <p
+        class="mt-4 text-pretty text-base sm:text-lg text-slate-600"
+      >
+        Talk to us about your next project.
+      </p>
+      <div
+        aria-label="Call to action buttons"
+        class="mt-8 flex flex-wrap gap-3 justify-center"
+        data-testid="cta-buttons"
+        role="group"
+      >
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-slate-900 hover:bg-slate-100 active:bg-slate-200 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2"
+          data-variant="primary"
+          href="/contact"
+        >
+          Book a call
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`CallToAction Component > Snapshots > should match the snapshot for the gradient background 1`] = `
+<section
+  aria-label="Ready to get started?"
+  class="relative isolate w-full overflow-hidden"
+  data-alignment="right"
+  data-background-type="gradient"
+  data-content-position="right"
+  style="background-image: linear-gradient(90deg, rgb(219, 39, 119), rgb(249, 115, 22));"
+>
+  <div
+    class="relative flex w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+  >
+    <div
+      class="flex w-full flex-col ml-auto items-end text-right"
+      data-testid="cta-content"
+      style="max-width: 42rem;"
+    >
+      <h2
+        class="text-balance text-3xl font-bold sm:text-4xl lg:text-5xl text-white"
+      >
+        Ready to get started?
+      </h2>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`CallToAction Component > Snapshots > should match the snapshot for the image background with overlay 1`] = `
+<section
+  aria-label="Ready to get started?"
+  class="relative isolate w-full overflow-hidden"
+  data-alignment="left"
+  data-background-type="image"
+  data-content-position="left"
+>
+  <img
+    alt=""
+    aria-hidden="true"
+    class="absolute inset-0 -z-10 h-full w-full object-cover"
+    data-testid="cta-background-image"
+    loading="lazy"
+    src="https://cdn.example.com/background.jpg"
+  />
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 -z-10"
+    data-testid="cta-overlay"
+    style="background-color: rgb(0, 0, 0); opacity: 0.55;"
+  />
+  <div
+    class="relative flex w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+  >
+    <div
+      class="flex w-full flex-col mr-auto items-start text-left"
+      data-testid="cta-content"
+      style="max-width: 42rem;"
+    >
+      <h2
+        class="text-balance text-3xl font-bold sm:text-4xl lg:text-5xl text-white"
+      >
+        Ready to get started?
+      </h2>
+      <p
+        class="mt-4 text-pretty text-base sm:text-lg text-slate-100"
+      >
+        Talk to us about your next project.
+      </p>
+      <div
+        aria-label="Call to action buttons"
+        class="mt-8 flex flex-wrap gap-3 justify-start"
+        data-testid="cta-buttons"
+        role="group"
+      >
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-slate-900 hover:bg-slate-100 active:bg-slate-200 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2"
+          data-variant="primary"
+          href="/contact"
+        >
+          Book a call
+        </a>
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-600 text-white hover:bg-slate-700 active:bg-slate-800 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2"
+          data-variant="secondary"
+          href="/work"
+        >
+          See our work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`CallToAction Component > Snapshots > should match the snapshot for the title-only variant 1`] = `
+<section
+  aria-label="Ready to get started?"
+  class="relative isolate w-full overflow-hidden"
+  data-alignment="center"
+  data-background-type="colour"
+  data-content-position="center"
+  style="background-color: rgb(241, 245, 249);"
+>
+  <div
+    class="relative flex w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+  >
+    <div
+      class="flex w-full flex-col mx-auto items-center text-center"
+      data-testid="cta-content"
+      style="max-width: 42rem;"
+    >
+      <h2
+        class="text-balance text-3xl font-bold sm:text-4xl lg:text-5xl text-slate-900"
+      >
+        Ready to get started?
+      </h2>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`CallToAction Component > Snapshots > should match the snapshot for the video background with overlay 1`] = `
+<section
+  aria-label="Ready to get started?"
+  class="relative isolate w-full overflow-hidden"
+  data-alignment="center"
+  data-background-type="video"
+  data-content-position="center"
+>
+  <video
+    aria-hidden="true"
+    autoplay=""
+    class="absolute inset-0 -z-10 h-full w-full object-cover"
+    data-testid="cta-background-video"
+    loop=""
+    playsinline=""
+    poster="https://cdn.example.com/poster.jpg"
+    tabindex="-1"
+  >
+    <source
+      src="https://cdn.example.com/background.mp4"
+    />
+  </video>
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 -z-10"
+    data-testid="cta-overlay"
+    style="background-color: rgb(0, 0, 0); opacity: 0.5;"
+  />
+  <div
+    class="relative flex w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+  >
+    <div
+      class="flex w-full flex-col mx-auto items-center text-center"
+      data-testid="cta-content"
+      style="max-width: 42rem;"
+    >
+      <h2
+        class="text-balance text-3xl font-bold sm:text-4xl lg:text-5xl text-white"
+      >
+        Ready to get started?
+      </h2>
+      <div
+        aria-label="Call to action buttons"
+        class="mt-8 flex flex-wrap gap-3 justify-center"
+        data-testid="cta-buttons"
+        role="group"
+      >
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-slate-900 hover:bg-slate-100 active:bg-slate-200 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2"
+          data-variant="primary"
+          href="/contact"
+        >
+          Book a call
+        </a>
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-600 text-white hover:bg-slate-700 active:bg-slate-800 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2"
+          data-variant="secondary"
+          href="/work"
+        >
+          See our work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

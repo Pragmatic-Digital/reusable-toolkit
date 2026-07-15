@@ -1,0 +1,282 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card Component > Snapshots > should match the snapshot for the badge + button footer variant 1`] = `
+<article
+  class="group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg focus-within:shadow-lg"
+  data-hover-effect="lift"
+  data-testid="card"
+>
+  <div
+    class="relative w-full overflow-hidden bg-slate-100"
+    data-testid="card-media"
+    style="aspect-ratio: 16 / 9;"
+  >
+    <img
+      alt="A winding mountain road at dusk"
+      class="h-full w-full object-cover"
+      data-testid="card-image"
+      loading="lazy"
+      src="https://cdn.example.com/hero.jpg"
+    />
+    <span
+      class="absolute left-3 top-3 z-10 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold bg-indigo-600 text-white"
+      data-testid="card-badge"
+      data-variant="accent"
+    >
+      New
+    </span>
+  </div>
+  <div
+    class="flex flex-1 flex-col p-4"
+  >
+    <h3
+      class="text-lg font-semibold text-slate-900"
+    >
+      Card title
+    </h3>
+    <p
+      class="mt-2 text-sm text-slate-600"
+      data-testid="card-excerpt"
+    >
+      Supporting copy.
+    </p>
+    <div
+      class="mt-auto"
+    >
+      <a
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-slate-900 hover:bg-slate-100 active:bg-slate-200 focus-visible:ring-white focus-visible:ring-offset-slate-900 h-10 px-4 py-2 mt-4"
+        data-testid="card-footer"
+        data-variant="button"
+        href="#x"
+      >
+        View project
+      </a>
+    </div>
+  </div>
+</article>
+`;
+
+exports[`Card Component > Snapshots > should match the snapshot for the default variant 1`] = `
+<article
+  class="group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg focus-within:shadow-lg"
+  data-hover-effect="lift"
+  data-testid="card"
+>
+  <div
+    class="relative w-full overflow-hidden bg-slate-100"
+    data-testid="card-media"
+    style="aspect-ratio: 16 / 9;"
+  >
+    <img
+      alt="A winding mountain road at dusk"
+      class="h-full w-full object-cover"
+      data-testid="card-image"
+      loading="lazy"
+      src="https://cdn.example.com/hero.jpg"
+    />
+  </div>
+  <div
+    class="flex flex-1 flex-col p-4"
+  >
+    <h3
+      class="text-lg font-semibold text-slate-900"
+    >
+      Card title
+    </h3>
+    <p
+      class="mt-2 text-sm text-slate-600"
+      data-testid="card-excerpt"
+    >
+      Supporting copy.
+    </p>
+    <div
+      class="mt-auto"
+    >
+      <a
+        class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 rounded-sm"
+        data-testid="card-footer"
+        data-variant="link"
+        href="#post"
+      >
+        Read more
+        <span
+          aria-hidden="true"
+        >
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+</article>
+`;
+
+exports[`Card Component > Snapshots > should match the snapshot for the image-and-title-only variant 1`] = `
+<article
+  class="group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg focus-within:shadow-lg"
+  data-hover-effect="lift"
+  data-testid="card"
+>
+  <div
+    class="relative w-full overflow-hidden bg-slate-100"
+    data-testid="card-media"
+    style="aspect-ratio: 16 / 9;"
+  >
+    <img
+      alt="A winding mountain road at dusk"
+      class="h-full w-full object-cover"
+      data-testid="card-image"
+      loading="lazy"
+      src="https://cdn.example.com/hero.jpg"
+    />
+  </div>
+  <div
+    class="flex flex-1 flex-col p-4"
+  >
+    <h3
+      class="text-lg font-semibold text-slate-900"
+    >
+      Card title
+    </h3>
+    <div
+      class="mt-auto"
+    />
+  </div>
+</article>
+`;
+
+exports[`Card Component > Snapshots > should match the snapshot for the interactive variant 1`] = `
+<article
+  class="group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg focus-within:shadow-lg"
+  data-hover-effect="lift"
+  data-interactive="true"
+  data-testid="card"
+>
+  <div
+    class="relative w-full overflow-hidden bg-slate-100"
+    data-testid="card-media"
+    style="aspect-ratio: 16 / 9;"
+  >
+    <img
+      alt="A winding mountain road at dusk"
+      class="h-full w-full object-cover"
+      data-testid="card-image"
+      loading="lazy"
+      src="https://cdn.example.com/hero.jpg"
+    />
+  </div>
+  <div
+    class="flex flex-1 flex-col p-4"
+  >
+    <h3
+      class="text-lg font-semibold text-slate-900"
+    >
+      <a
+        class="after:absolute after:inset-0 after:content-[''] focus:outline-none focus-visible:underline"
+        data-testid="card-title-link"
+        href="#post"
+      >
+        Card title
+      </a>
+    </h3>
+    <p
+      class="mt-2 text-sm text-slate-600"
+      data-testid="card-excerpt"
+    >
+      Supporting copy.
+    </p>
+    <div
+      class="mt-auto"
+    >
+      <div
+        aria-hidden="true"
+        class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-indigo-600"
+        data-testid="card-footer"
+        data-variant="link"
+      >
+        Read more
+        <span
+          aria-hidden="true"
+        >
+          →
+        </span>
+      </div>
+    </div>
+  </div>
+</article>
+`;
+
+exports[`Card Component > Snapshots > should match the snapshot for the no-image variant 1`] = `
+<article
+  class="group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg focus-within:shadow-lg"
+  data-hover-effect="lift"
+  data-testid="card"
+>
+  <div
+    class="relative w-full overflow-hidden bg-slate-100"
+    data-testid="card-media"
+    style="aspect-ratio: 16 / 9;"
+  >
+    <div
+      aria-hidden="true"
+      class="flex h-full w-full items-center justify-center text-slate-300"
+      data-testid="card-image-placeholder"
+    >
+      <svg
+        class="h-10 w-10"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+      >
+        <rect
+          height="18"
+          rx="2"
+          width="18"
+          x="3"
+          y="3"
+        />
+        <circle
+          cx="8.5"
+          cy="8.5"
+          r="1.5"
+        />
+        <path
+          d="m21 15-5-5L5 21"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="flex flex-1 flex-col p-4"
+  >
+    <h3
+      class="text-lg font-semibold text-slate-900"
+    >
+      Card title
+    </h3>
+    <p
+      class="mt-2 text-sm text-slate-600"
+      data-testid="card-excerpt"
+    >
+      Copy
+    </p>
+    <div
+      class="mt-auto"
+    >
+      <a
+        class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 rounded-sm"
+        data-testid="card-footer"
+        data-variant="link"
+        href="#p"
+      >
+        Read more
+        <span
+          aria-hidden="true"
+        >
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+</article>
+`;

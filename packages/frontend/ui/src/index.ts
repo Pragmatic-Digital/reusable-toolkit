@@ -5,6 +5,70 @@
 export { Hero } from './components/Hero';
 export type { HeroProps, HeroButton, HeroOverlay, HeroGradient } from './components/Hero';
 
+// CallToAction Component
+export { CallToAction } from './components/CallToAction';
+export type {
+  CallToActionProps,
+  CallToActionButton,
+  CallToActionOverlay,
+  CallToActionBackground,
+  CallToActionColourBackground,
+  CallToActionGradientBackground,
+  CallToActionImageBackground,
+  CallToActionVideoBackground,
+  CallToActionVideoSource,
+  CallToActionAlignment,
+  CallToActionContentPosition,
+  CallToActionButtonVariant,
+} from './components/CallToAction';
+
+// Card Component
+export { Card } from './components/Card';
+export type {
+  CardProps,
+  CardAction,
+  CardActionVariant,
+  CardHoverEffect,
+  CardBadgeVariant,
+} from './components/Card';
+
+// FeatureGrid Component
+export { FeatureGrid, FeatureCard } from './components/FeatureGrid';
+export type {
+  FeatureGridProps,
+  FeatureCardProps,
+  Feature,
+  FeatureGridColumns,
+  FeatureGridLayout,
+  FeatureBadgeVariant,
+} from './components/FeatureGrid';
+
+// Testimonial Components
+export { Testimonial, StarRating } from './components/Testimonial';
+export type {
+  TestimonialProps,
+  TestimonialVariant,
+  StarRatingProps,
+} from './components/Testimonial';
+export { TestimonialCarousel } from './components/Testimonial';
+export type { TestimonialCarouselProps } from './components/Testimonial';
+
+// LogoGrid Component
+export { LogoGrid } from './components/LogoGrid';
+export type { LogoGridProps, Logo, LogoGridColumns, LogoHoverEffect } from './components/LogoGrid';
+
+// ImageText Component
+export { ImageText } from './components/ImageText';
+export type {
+  ImageTextProps,
+  ImageTextCta,
+  ImageTextPosition,
+  ImageTextLayout,
+  ImageTextMobileOrder,
+  ImageTextAlign,
+  ImageTextCtaVariant,
+} from './components/ImageText';
+
 // Form Components
 export { Input } from './components/Input';
 export type { InputProps } from './components/Input';

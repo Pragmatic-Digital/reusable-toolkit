@@ -1,0 +1,710 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TestimonialCarousel Component > Accessibility > should match the snapshot 1`] = `
+<div
+  aria-label="Customer testimonials"
+  aria-roledescription="carousel"
+  class="relative"
+  data-testid="testimonial-carousel"
+  role="group"
+>
+  <div
+    aria-live="polite"
+    class="overflow-hidden"
+    data-testid="testimonial-carousel-track"
+  >
+    <div
+      class="flex transition-transform duration-500 ease-out"
+      style="transform: translateX(-0%);"
+    >
+      <div
+        aria-hidden="false"
+        aria-label="1 of 3"
+        aria-roledescription="slide"
+        class="w-full shrink-0 px-1"
+        data-active="true"
+        data-testid="testimonial-slide"
+        id=":rs:-slide-0"
+        role="group"
+      >
+        <figure
+          class="flex flex-col rounded-xl border border-slate-200 bg-white p-6"
+          data-testid="testimonial"
+          data-variant="single"
+        >
+          <div
+            aria-label="5 out of 5 stars"
+            class="relative inline-flex mb-3"
+            data-max="5"
+            data-testid="rating"
+            data-value="5"
+            role="img"
+          >
+            <div
+              class="flex"
+              data-testid="rating-empty"
+              style="color: rgb(203, 213, 225);"
+            >
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+            </div>
+            <div
+              aria-hidden="true"
+              class="absolute inset-0 overflow-hidden"
+              data-testid="rating-fill"
+              style="width: 100%;"
+            >
+              <div
+                class="flex"
+                data-testid="rating-filled"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <blockquote
+            class="flex-1 text-lg text-slate-800"
+          >
+            <p>
+              “First quote.”
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-4 flex items-center gap-3"
+          >
+            <span
+              aria-hidden="true"
+              class="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-200 font-semibold text-slate-600 h-11 w-11 text-sm"
+              data-testid="testimonial-avatar-fallback"
+            >
+              AO
+            </span>
+            <div
+              class="flex flex-col"
+            >
+              <span
+                class="font-semibold text-slate-900"
+                data-testid="testimonial-author"
+              >
+                Author One
+              </span>
+              <span
+                class="text-sm text-slate-500"
+                data-testid="testimonial-meta"
+              >
+                Alpha
+              </span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-label="2 of 3"
+        aria-roledescription="slide"
+        class="w-full shrink-0 px-1"
+        data-testid="testimonial-slide"
+        id=":rs:-slide-1"
+        inert=""
+        role="group"
+      >
+        <figure
+          class="flex flex-col rounded-xl border border-slate-200 bg-white p-6"
+          data-testid="testimonial"
+          data-variant="single"
+        >
+          <div
+            aria-label="4.5 out of 5 stars"
+            class="relative inline-flex mb-3"
+            data-max="5"
+            data-testid="rating"
+            data-value="4.5"
+            role="img"
+          >
+            <div
+              class="flex"
+              data-testid="rating-empty"
+              style="color: rgb(203, 213, 225);"
+            >
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+            </div>
+            <div
+              aria-hidden="true"
+              class="absolute inset-0 overflow-hidden"
+              data-testid="rating-fill"
+              style="width: 90%;"
+            >
+              <div
+                class="flex"
+                data-testid="rating-filled"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <blockquote
+            class="flex-1 text-lg text-slate-800"
+          >
+            <p>
+              “Second quote.”
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-4 flex items-center gap-3"
+          >
+            <span
+              aria-hidden="true"
+              class="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-200 font-semibold text-slate-600 h-11 w-11 text-sm"
+              data-testid="testimonial-avatar-fallback"
+            >
+              AT
+            </span>
+            <div
+              class="flex flex-col"
+            >
+              <span
+                class="font-semibold text-slate-900"
+                data-testid="testimonial-author"
+              >
+                Author Two
+              </span>
+              <span
+                class="text-sm text-slate-500"
+                data-testid="testimonial-meta"
+              >
+                Beta
+              </span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-label="3 of 3"
+        aria-roledescription="slide"
+        class="w-full shrink-0 px-1"
+        data-testid="testimonial-slide"
+        id=":rs:-slide-2"
+        inert=""
+        role="group"
+      >
+        <figure
+          class="flex flex-col rounded-xl border border-slate-200 bg-white p-6"
+          data-testid="testimonial"
+          data-variant="single"
+        >
+          <div
+            aria-label="4 out of 5 stars"
+            class="relative inline-flex mb-3"
+            data-max="5"
+            data-testid="rating"
+            data-value="4"
+            role="img"
+          >
+            <div
+              class="flex"
+              data-testid="rating-empty"
+              style="color: rgb(203, 213, 225);"
+            >
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class=""
+                fill="#cbd5e1"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+              >
+                <path
+                  d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                />
+              </svg>
+            </div>
+            <div
+              aria-hidden="true"
+              class="absolute inset-0 overflow-hidden"
+              data-testid="rating-fill"
+              style="width: 80%;"
+            >
+              <div
+                class="flex"
+                data-testid="rating-filled"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="text-amber-400"
+                  fill="currentColor"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                >
+                  <path
+                    d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 21l1.2-6.5L2.5 9.9l6.6-.9L12 2.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <blockquote
+            class="flex-1 text-lg text-slate-800"
+          >
+            <p>
+              “Third quote.”
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-4 flex items-center gap-3"
+          >
+            <span
+              aria-hidden="true"
+              class="inline-flex shrink-0 items-center justify-center rounded-full bg-slate-200 font-semibold text-slate-600 h-11 w-11 text-sm"
+              data-testid="testimonial-avatar-fallback"
+            >
+              AT
+            </span>
+            <div
+              class="flex flex-col"
+            >
+              <span
+                class="font-semibold text-slate-900"
+                data-testid="testimonial-author"
+              >
+                Author Three
+              </span>
+              <span
+                class="text-sm text-slate-500"
+                data-testid="testimonial-meta"
+              >
+                Gamma
+              </span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mt-4 flex items-center justify-between gap-4"
+  >
+    <button
+      aria-label="Previous testimonial"
+      class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 disabled:opacity-40"
+      data-testid="testimonial-prev"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="18"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M15 18l-6-6 6-6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <div
+      aria-label="Choose testimonial"
+      class="flex items-center gap-2"
+      data-testid="testimonial-pagination"
+      role="tablist"
+    >
+      <button
+        aria-controls=":rs:-slide-0"
+        aria-label="Go to testimonial 1"
+        aria-selected="true"
+        class="h-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 w-6 bg-indigo-600"
+        data-active="true"
+        data-testid="testimonial-dot"
+        role="tab"
+        type="button"
+      />
+      <button
+        aria-controls=":rs:-slide-1"
+        aria-label="Go to testimonial 2"
+        aria-selected="false"
+        class="h-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 w-2.5 bg-slate-300 hover:bg-slate-400"
+        data-testid="testimonial-dot"
+        role="tab"
+        type="button"
+      />
+      <button
+        aria-controls=":rs:-slide-2"
+        aria-label="Go to testimonial 3"
+        aria-selected="false"
+        class="h-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 w-2.5 bg-slate-300 hover:bg-slate-400"
+        data-testid="testimonial-dot"
+        role="tab"
+        type="button"
+      />
+    </div>
+    <button
+      aria-label="Next testimonial"
+      class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 disabled:opacity-40"
+      data-testid="testimonial-next"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="18"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M9 18l6-6-6-6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    aria-live="polite"
+    class="sr-only"
+    data-testid="testimonial-status"
+  >
+    Testimonial 
+    1
+     of 
+    3
+  </div>
+</div>
+`;

@@ -7,6 +7,13 @@ afterEach(() => {
   cleanup();
 });
 
+// Polyfill ResizeObserver (used by Radix NavigationMenu and others)
+global.ResizeObserver = class ResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};
+
 // Mock window.matchMedia
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
